@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Añadir Email y Nombre en git:
-    1. git config --global user.email "email@example.com"
-    2. git config --global user.name "Fullname"
+    <main>
+        <h1>COMANDOS GIT</h1>
 
-    Crear y Subir Repositorio de forma Local:
-    1. git init
-    2. git add . | git add [archivo]
-    3. git commit -m "Nombre"
+        <h2>Añadir Email y Nombre en git:</h2>
+        <p>1. git config --global user.email "email@example.com"<br>
+        2. git config --global user.name "Fullname"</p>
 
-    Conectar Git con Git Hub:
-    1. generar un Token en GitHub
-    2. git config --global user.password "token"
-    3. git config --global credential.helper store
+        <h2>Crear y Subir Repositorio de forma Local:</h2>
+        <p>1. git init<br>
+        2. git add . | git add [archivo]<br>
+        3. git commit -m "Nombre"</p>
 
-    Crear repositorio en GitHub:
-    1. Crear repositorio desde el perfil
-    2. copiar el comando de git remote add origin link
+        <h2>Conectar Git con Git Hub:</h2>
+        <p>1. generar un Token en GitHub<br>
+        2. git config --global user.password "token"<br>
+        3. git config --global credential.helper store</p>
 
-    Subir el repositorio Local a GitHub:
-    1. git push -u origin "branch name (Main)"
-    2. git add .
-    3. git commit -m "nombre"
-    4. git pull
+        <h2>Crear repositorio en GitHub:</h2>
+        <p>1. Crear repositorio desde el perfil<br>
+        2. copiar el comando de git remote add origin link</p>
+
+        <h2>Subir el repositorio Local a GitHub:</h2>
+        <p>1. git push -u origin "branch name (Main)"<br>
+        2. git add .<br>
+        3. git commit -m "nombre"<br>
+        4. git pull</p>
 
 
-    Comandos Utiles de GIT:
-    - git clone "html link" : Clonar un repositorio
-    - git pull - Traer las actualizaciones del repositorio-
-    - git log --online : ver la lista actualizaciones realizadas
-    - git status : revisar si tu archivo local esta actualizaco al repositorio
-    - git restore --staged : restaurar un archivo cuando fue enviado a preparacion
+        <h2>Comandos Utiles de GIT:</h2>
+        <p>- git clone "html link" : Clonar un repositorio<br>
+        - git pull - Traer las actualizaciones del repositorio-<br>
+        - git log --online : ver la lista actualizaciones realizadas<br>
+        - git status : revisar si tu archivo local esta actualizaco al repositorio<br>
+        - git restore --staged . : restaurar un add cuando fue enviado a preparacion<br>
+        - git reset --soft HEAD¬1 : restaura un commit cuando fue enviado (soft para no perder el estado actual)<br>
+        - git reset --hard HEAD¬1 : restaura un commit cuando fue enviado (hard para borrar el actual volviendo al
+        anterior)<br>
+        - git push -f</p>
+    </main>
+    <img src="./img/git.png" alt="Imagen explicativa de los comandos de GIT">
 </body>
+
 </html>
