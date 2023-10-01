@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <h1>COMANDOS GIT</h1>
+        <h1>Git & GitHub</h1>
 
         <h2>Añadir Email y Nombre en git:</h2>
         <p>1. git config --global user.email "email@example.com"<br>
@@ -39,7 +39,7 @@
 
         <h2>Comandos Utiles de GIT:</h2>
         <p>- git clone "html link" : Clonar un repositorio<br>
-        - git pull - Traer las actualizaciones del repositorio-<br>
+        - git pull : Traer las actualizaciones del repositorio<br>
         - git log --online : ver la lista actualizaciones realizadas<br>
         - git status : revisar si tu archivo local esta actualizaco al repositorio<br>
         - git restore --staged . : restaurar un add cuando fue enviado a preparacion<br>
@@ -47,8 +47,21 @@
         - git reset --hard HEAD¬1 : restaura un commit cuando fue enviado (hard para borrar el actual volviendo al
         anterior)<br>
         - git clean -fd: limpia los archivos modificados</p>
+        <img src="./img/git.png" alt="Imagen explicativa de los comandos de GIT">
+
+        <h2>Que es una Rama ("branch")</h2>
+        <p>Una rama representa una linea independiente de desarrollo,<br>es como crear un nuevo área de trabajo con su área de ensayo y su historial.<br>Los nuevos commits se rgistran de forma independiente en el historial de la rama,<br>lo que se conoce como forks en el historial de proyecto.</p>
+        <img src="./img/branch.png" alt="Imagen explicativa de los branch">
+
+        <h2>Comandos relacionados al Branch</h2>
+        <p>- git branch : Listar las ramas<br>
+        -git branch nombre-rama : Crear rama con el nombre<br>
+        - git checkout nombre-rama : Para moverse a la rama<br>
+        -git push -u origin nombre-rama : Subir al GitHub el branch deseado<br>
+        -git branch -D nombre-rama : Borra la rama deseada<br>
+        -git push origin --delete nombre-rama : Borra la rama deseada en GitHub</p>
+        <h1>nashi</h1>
     </main>
-    <img src="./img/git.png" alt="Imagen explicativa de los comandos de GIT">
 </body>
 
 </html>
